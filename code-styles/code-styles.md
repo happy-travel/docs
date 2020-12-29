@@ -17,14 +17,15 @@ _Example:_ [kanazawa](https://github.com/happy-travel/kanazawa)
 1.1.2 Libraries _may_ be named after their role.\
 _Examples:_ [data-formatters](https://github.com/happy-travel/data-formatters), or [diplomat](https://github.com/happy-travel/diplomat)
 
-1.1.3 Connector implementation names _must_ ends with `-connector` postfix
+1.1.3 Connector implementation names _must_ start with supplier name and end with `-connector` postfix. 
+_Examples:_ [netstorming-connector](https://github.com/happy-travel/netstorming-connector)
 
 
 ### 1.2 C# Solutions
 
 1.2.1 Keep following rules when name
 
-- Assembleys:
+- Assemblies:
 ```
 HappyTravel.<SolutionName>.<ProjectName>
 ```
@@ -40,9 +41,9 @@ _Example:_ `HappyTravel.Edo.Api`
 <SolutionName>.<ProjectName>
 ```
 
-1.2.2 A project _must_ ends on `Api`, if it contains API endpoints
+1.2.2 A project _must_ end on `Api`, if it contains API endpoints
 
-1.2.3 A project _must_ ends on `Client`, if if it contains an implementation of any API (i.e. a supplier one)
+1.2.3 A project _must_ end on `Client`, if if it contains an implementation of any API (i.e. a supplier one)
 
 1.2.4 If a project contains separate DB-related logic, it usually calls `Data`
 
@@ -51,9 +52,9 @@ _Example:_ `HappyTravel.Edo.Api`
 
 ### 2.1 Class Structure
 
-2.1.1 You _must_ keep elements of a class from public, to internal, to protected, and to private
+2.1.1 You _must_ keep elements of a class in order from public, to internal, to protected, and to private
 
-2.1.2 Elements within the scope _should_ sort in alphabetical order
+2.1.2 Elements within the scope (methods, properties etc..) _should_ be sorted in alphabetical order
 
 2.1.3 Scope modifiers _must_ be specified
 ```csharp
@@ -74,8 +75,9 @@ private Method() {}
 | Constructors |
 | Delegates |
 | Methods and properties |
-| Fields and static properties |
-| Class-level variables |
+| Constants |
+| Static fields and properties |
+| Instance-level fields and properties |
 
 \
 _Example:_
@@ -127,11 +129,11 @@ public class Class
 
 2.2.2 Use nullable refs where possible
 
-2.2.3 Use one blank line to separate method parts
+2.2.3 Use one blank line to separate method logical parts
 
-2.2.4 Use two blank lines to separate methods between each other
+2.2.4 Use two blank lines to separate methods from each other
 
-2.2.5 Use 160 characters per line
+2.2.5 Use 160 characters or less per line
 
 2.2.6 Try to keep a class no more than 250–300 lines 
 
@@ -153,13 +155,13 @@ _context.Entities
     .ToList();
 ```
 
-2.2.8 Place an arrow at a new line when use expression syntax
+2.2.8 Place an arrow at a new line when using expression syntax
 ```csharp
 public static int GetValue() 
     => DoSomeCalculation();
 ```
 
-2.2.9 Prefer expression syntax over return where possible
+2.2.9 Prefer expression syntax over statement body where possible
 
 2.2.10 You _may_ use shorter names for small scopes, but keep readability first
 

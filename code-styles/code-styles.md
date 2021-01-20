@@ -8,7 +8,7 @@
     - [Class Structure](#class-structure)
     - [General](#general)
     - [Behavior](#behavior)
-        + [C# Functional Extensions](c-sharp-functional-extensions)
+        + [C# Functional Extensions](#c-sharp-functional-extensions)
     - [Statements](#statements)
 
 

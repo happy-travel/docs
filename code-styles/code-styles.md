@@ -1,13 +1,23 @@
----
-title: "Style Guides"
-description: ""
-author: @kirillta
-date: 2020.12.25
----
-
 # Style Guides
 
+##### Table of Contents
+* [Service Naming Rules](#service-naming-rules)
+    - [Repository](#repository)
+    - [C# Solutions](#c-sharp-solutions)
+* [C# Code Style Guide](#c-sharp-code-style-guide)
+    - [Class Structure](#class-structure)
+    - [General](#general)
+    - [Behavior](#behavior)
+        + [C# Functional Extensions](c-sharp-functional-extensions)
+    - [Statements](#statements)
+
+
+<a name="service-naming-rules"/>
+
 ## 1. Service Naming Rules
+
+
+<a name="repository"/>
 
 ### 1.1 Repository 
 
@@ -20,6 +30,8 @@ _Examples:_ [data-formatters](https://github.com/happy-travel/data-formatters), 
 1.1.3 Connector implementation names _must_ start with supplier name and end with `-connector` postfix. 
 _Examples:_ [netstorming-connector](https://github.com/happy-travel/netstorming-connector)
 
+
+<a name="c-sharp-solutions"/>
 
 ### 1.2 C# Solutions
 
@@ -48,7 +60,12 @@ _Example:_ `HappyTravel.Edo.Api`
 1.2.4 If a project contains separate DB-related logic, it usually calls `Data`
 
 
+<a name="c-sharp-code-style-guide"/>
+
 ## 2. C# Code Style Guide
+
+
+<a name="class-structure"/>
 
 ### 2.1 Class Structure
 
@@ -123,6 +140,8 @@ public class Class
 ```
 
 
+<a name="general"/>
+
 ### 2.2 General
 
 2.2.1 You _should_ call a returning value as `result`
@@ -165,6 +184,10 @@ public static int GetValue()
 
 2.2.10 You _may_ use shorter names for small scopes, but keep readability first
 
+2.2.11 Do not use `Async` postfix by default in method names, because most of our methods are asynchronous and the prefix adds extra visual noise
+
+
+<a name="behavior"/>
 
 ### 2.3 Behavior
 
@@ -179,6 +202,8 @@ void SomeFunc()
 }
 ```
 
+
+<a name="c-sharp-functional-extensions"/>
 
 #### 2.3.2 C# Functional Extensions
 
@@ -205,6 +230,8 @@ Result<MoneyAmount> GetServicePrice(string referenceCode)
 }
 ```
 
+
+<a name="statements"/>
 
 ### 2.4 Statements
 

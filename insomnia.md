@@ -1,5 +1,18 @@
 # Request Structure in Insomnia
 
+```
+├ 🗁 Service 1
+  ├ 🗁 Path 1  
+    ├ 🗁 Path 1.1
+    └ 🗁 Path 1.2
+      ├ 🗁 Complex Action 1
+        ├ 🗋 Scenario 1
+        └ 🗋 Scenario 2
+      ├ 🗋 Simple Action 1
+      └ 🗋 Simple Action 2
+  └ 🗀 Path 2
+└ 🗀 Service 2
+```
 
 ## Top Level
 

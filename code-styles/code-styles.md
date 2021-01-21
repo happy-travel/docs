@@ -5,6 +5,7 @@
     - [Repository](#repository)
     - [C# Solutions](#c-sharp-solutions)
     - [Git Branches](#git-branches)
+    - [REST Resources](#rest-resources)
 * [C# Code Style Guide](#c-sharp-code-style-guide)
     - [Class Structure](#class-structure)
     - [General](#general)
@@ -74,8 +75,41 @@ _Example:_ `HappyTravel.Edo.Api`
 |hotfix   |Hot fixes of builds, may not have a coupled ticket  |
 |technical|Infrastructural tasks, may not have a coupled ticket|
 
-_Pattern:_ `{prefix}/{TICKET-NUMBER}_{PascalCaseShortDescription}`\
+_Pattern:_ `{prefix}/{TICKET-NUMBER}_{PascalCaseShortDescription}`
+
 _Example:_ `feature/NIJO-88_ImplementBasicPaymentApi`
+
+
+<a name="rest-resources"/>
+
+## 1.4 REST Resources
+
+1.4.1 General naming rules are available by this [link](https://restfulapi.net/resource-naming/)
+
+1.4.2.1 Use resource names in front of variable parameters. If the value is a resource ID, the ID part should be omitted
+
+:x: `root/:resourceId/action`\
+:x: `root/resource-ids/:resourceId/action`\
+:white_check_mark: `root/resources/:resourceId/action`
+
+1.4.2.2 When an action match with a HTTP verb, a path must not ends with the action name
+
+:x: `GET root/resources/:resourceId/get`\
+:x: `GET root/resources/:resourceId/get-resource`\
+:white_check_mark: `GET root/resources/:resourceId/`\
+:white_check_mark: `GET root/resources/:resourceId/check-out`
+
+1.4.2.3 Pass values by query parameters for GET methods when a resource doesn’t have IDs
+
+:x: `root/resources/action/:value1/:value2`\
+:x: `root/resources/action/param1/:value1/param2/:value2`\
+:white_check_mark: `root/resources/action?param1=:value1&param2=:value2`
+
+1.4.2.4 Use an iteration of a singular parameter name to pass a list by query parameters
+
+:x: `root/resources/action?params=:value1,:value2`\
+:x: `root/resources/action?params=:value1&params=:value2`\
+:white_check_mark: `root/resources/action?param=:value1&param=:value2`
 
 
 <a name="c-sharp-code-style-guide"/>

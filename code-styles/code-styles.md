@@ -4,6 +4,7 @@
 * [Service Naming Rules](#service-naming-rules)
     - [Repository](#repository)
     - [C# Solutions](#c-sharp-solutions)
+    - [Git Branches](#git-branches)
 * [C# Code Style Guide](#c-sharp-code-style-guide)
     - [Class Structure](#class-structure)
     - [General](#general)
@@ -58,6 +59,23 @@ _Example:_ `HappyTravel.Edo.Api`
 1.2.3 A project _must_ end on `Client`, if if it contains an implementation of any API (i.e. a supplier one)
 
 1.2.4 If a project contains separate DB-related logic, it usually calls `Data`
+
+
+<a name="git-branches"/>
+
+## 1.3 Git Branches
+
+1.3.1 Use following prefixes when name branches
+
+|Prefix   |Description                                         |
+|---------|----------------------------------------------------|
+|feature  |Tasks from tickets                                  |
+|bugfix   |Bug fixes from tickets                              |
+|hotfix   |Hot fixes of builds, may not have a coupled ticket  |
+|technical|Infrastructural tasks, may not have a coupled ticket|
+
+_Pattern:_ `{prefix}/{TICKET-NUMBER}_{PascalCaseShortDescription}`\
+_Example:_ `feature/NIJO-88_ImplementBasicPaymentApi`
 
 
 <a name="c-sharp-code-style-guide"/>
@@ -185,6 +203,8 @@ public static int GetValue()
 2.2.10 You _may_ use shorter names for small scopes, but keep readability first
 
 2.2.11 Do not use `Async` postfix by default in method names, because most of our methods are asynchronous and the prefix adds extra visual noise
+
+2.2.12 Use `Created` and `Modified` for timestamps instead of `ModifiedAt` or `Updated` 
 
 
 <a name="behavior"/>

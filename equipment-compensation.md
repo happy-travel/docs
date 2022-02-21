@@ -17,5 +17,5 @@ For instance:
 You need four conditions to be done to get a compensation:
 * You must have a bill to confirm a purchase
 * An approvement from the CTO or their deputy, what the purchase is work-related
-* Your purchase must be made after your start working in the company (and after 2021 July 01 for current employees, but not prion their first workday in the company)
+* Your purchase must be made after your start working in the company (and after 2021 July 01 for current employees, but not prior their first workday in the company)
 * Max compensation amount for all your purchases must not exceed $2000 at a moment of time.

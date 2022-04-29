@@ -31,4 +31,3 @@ You need four conditions to be done to get compensation:
 * You must have a bill to confirm a purchase
 * An approvement from the CTO or their deputy, what the purchase is work-related
 * Cmpensation amount for all your purchases must not exceed maximum amount at a moment of time.
-* Your purchase must be made after your start working in the company (and after 2021 July 01 for current employees for equipment compensations, but not prior their first workday in the company)

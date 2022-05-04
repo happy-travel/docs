@@ -37,7 +37,7 @@ Conditions:
 *	Knowledge of messaging systems, such as Apache Kafka
 
 
-## Lead Software Engineer Backend, $$3500-4000, 2 positions
+## Lead Software Engineer Backend, $$3500-4000
 
 #### Responsibilities:
 *	Design and develop new services
@@ -59,41 +59,3 @@ Conditions:
 *	Experience with message queues
 *	Experience with service architecture
 *	Functional programming skills
-
-
-## Lead Software Engineer Frontend, $$3500-4000
-
-#### Responsibilities:
-*	Design and develop of new services
-*	Code reviews
-
-#### Requirements:
-*	Strong skills of JavaScript
-*	Solid experience with React JS
-*	Knowledge of MobX
-*	Strong CSS layouting skills is a must
-*	Good understanding of algorithms and data structures
-*	5+ years of experience in JavaScript
-
-#### Nice to have:
-*	Experience in interaction with .Net back-ends
-*	Strong opinion in UI/UX decisions
-
-## Travel Tech Product Manager $$3000-4000
-
-#### Responsibilities:
-*	Coordinate a property management system development from the ground up
-*	Plan, track, control, and report progress
-*	Analyze, prioritize, and design new features
-*	Assist a development team in implementation of features
-
-#### Requirements:
-*	Background in travel business and property management systems specifically
-*	Strong experience in project management
-*	Familiarity with agile workflows
-*	Experience with project management software
-*	3+ years of experience
-
-#### Nice to have:
-*	Background in software development
-*	Basic knowledge of computer science 

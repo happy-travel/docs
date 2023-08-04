@@ -30,4 +30,4 @@ You may require rent compensation up to $200 per month.
 You need four conditions to be done to get compensation:
 * You must have a bill to confirm a purchase
 * An approvement from the CTO or their deputy, what the purchase is work-related
-* Cmpensation amount for all your purchases must not exceed maximum amount at a moment of time.
+* Compensation amount for all your purchases must not exceed maximum amount at a moment of time.
